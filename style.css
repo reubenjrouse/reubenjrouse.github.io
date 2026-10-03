@@ -1,0 +1,141 @@
+/* ---------------------------------------------------------------
+   FONT: change the @import line and --font together.
+   Other options: "Times New Roman" (no import needed), Tinos,
+   Crimson Pro, Libre Caslon Text, Source Serif 4
+   --------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+  --font: "EB Garamond", Garamond, "Times New Roman", serif;
+  --bold: 600;            /* weight for name, headings and roles */
+
+  --bg: #fdfcf9;          /* very slightly off-white */
+  --text: #1c1c1c;
+  --muted: #74726c;
+  --line: #e7e5df;
+  --accent: #1c1c1c;      /* links + name; e.g. #8b2e2a oxblood, #2f5a3c forest */
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+b { font-weight: var(--bold); }
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-color: var(--accent); }
+
+.muted { color: var(--muted); }
+
+/* top bar: name left, links right */
+header { border-bottom: 1px solid var(--line); }
+header .inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+}
+header .name {
+  font-weight: var(--bold);
+  letter-spacing: 0.14em;
+  font-size: 19px;
+  text-decoration: none;
+}
+header nav { display: flex; gap: 22px; font-size: 17px; }
+header nav a { color: var(--text); text-decoration: none; }
+header nav a:hover { text-decoration: underline; }
+
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 44px 32px 96px;
+}
+
+/* intro: photo left, text right */
+.intro {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+.intro > div { min-width: 0; display: grid; gap: 14px; }
+.photo { width: 240px; height: 240px; object-fit: cover; display: block; max-width: 100%; }
+
+.contact { display: grid; gap: 2px; font-size: 17px; margin-top: 6px; }
+.contact a, .contact span { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.contact svg {
+  width: 15px; height: 15px; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.9;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: var(--bold);
+  letter-spacing: 0.2em;
+  margin: 56px 0 18px;
+}
+
+/* dated list: experience, news, writing */
+.dated {
+  display: grid;
+  grid-template-columns: 9ch 1fr;
+  gap: 8px 20px;
+}
+.dated > * { min-width: 0; }
+.dated .date, .roles .date { color: var(--muted); font-variant-numeric: lining-nums tabular-nums; }
+
+/* experience: date | role | margin note */
+.roles {
+  display: grid;
+  grid-template-columns: 9ch minmax(0, 1fr) 260px;
+  gap: 8px 20px;
+}
+.roles > * { min-width: 0; }
+.roles .note {
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--muted);
+  border-left: 1px solid var(--line);
+  padding-left: 14px;
+  margin-bottom: 14px;
+}
+
+/* projects / publications */
+.list li { margin-bottom: 10px; }
+
+footer { margin-top: 64px; font-size: 15px; color: var(--muted); }
+
+/* phones */
+@media (max-width: 640px) {
+  header .inner { padding: 14px 18px; }
+  main { padding: 28px 18px 64px; }
+  body { font-size: 18px; }
+  .intro { grid-template-columns: 1fr; gap: 20px; }
+  .photo { width: 160px; height: 160px; }
+  .dated, .roles { grid-template-columns: 1fr; gap: 0; }
+  .dated .date, .roles .date { margin-top: 10px; font-size: 16px; }
+  .roles .note { margin: 4px 0 6px; }
+}
