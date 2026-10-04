@@ -1,0 +1,14 @@
+# Newest first. "url", "description" and "image" (a logo in images/) are optional.
+- name: "Harman Connected Services"
+  url: "https://services.harman.com/"
+  period: "Jul 2025 - Present"
+  role: "Junior Associate Data Scientist"
+  description: "Real-time visual guidance with VLMs, agentic AI, Scaled-YOLOv4 on Tenstorrent TT-SIM."
+  # image: /images/logos/harman.png
+
+- name: "Harman Connected Services"
+  url: "https://services.harman.com/"
+  period: "Jan 2025 - Jul 2025"
+  role: "Machine Learning Engineer Intern"
+  description: "No-code LLM fine-tuning platform for 10+ model families; Kubeflow, vLLM."
+  # image: /images/logos/harman.png

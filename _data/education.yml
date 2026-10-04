@@ -1,0 +1,6 @@
+# Newest first. "image" (a logo in images/) is optional.
+- name: "Mukesh Patel School of Technology Management & Engineering, NMIMS"
+  location: "Mumbai, India"
+  degree: "B.Tech in Artificial Intelligence"
+  period: "2021 - 2025"
+  # image: /images/logos/nmims.png

@@ -1,0 +1,24 @@
+# Newest first. "period" and "award" are optional. HTML is allowed.
+- title: "Stowage"
+  image: /images/projects/stowage.jpg
+  links:
+    - title: "demo"
+      url: "https://stowage-627911504151.us-central1.run.app/"
+    - title: "code"
+      url: "https://github.com/reubenjrouse/stowage"
+  description: "An RL agent that packs 3D boxes into a container, trained with MaskablePPO and a custom actor-critic that scores box × spot pairs. Ships as a playable three.js game: watch the agent, play the puzzle, or race it."
+
+- title: "Capsule Endoscopy Abnormality Classification"
+  image: /images/projects/capsule.jpg
+  links:
+    - title: "code"
+      url: "https://github.com/reubenjrouse/endoscopy-capsule-classification"
+  description: "Two-stage classifier (normal/abnormal, then 10 classes) fusing ResNet-50, DeiT and MobileNetV3 features with attention; focal loss and weighted sampling for class imbalance."
+  award: "<b>9th Place</b>, Capsule Vision 2024 Challenge"
+
+- title: "Indian Sign Language Translation"
+  image: /images/projects/isl.jpg
+  links:
+    - title: "code"
+      url: "https://github.com/reubenjrouse/indian-sign-language-translation"
+  description: "Real-time webcam translation: MediaPipe keypoints feed a BiLSTM sign classifier (30 signs, 96.4% accuracy), and Llama 3.1 turns the sign sequence into English sentences (BLEU-4 54.1)."

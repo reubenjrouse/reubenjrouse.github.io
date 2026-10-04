@@ -1,0 +1,17 @@
+# Intro at the top of the page. HTML is allowed inside the quotes.
+name: "Reuben Rouse"
+photo: /images/me.jpg
+description: "Data scientist working on computer vision, physical AI and world models."
+updated: "Oct 2026"
+
+bio:
+  - 'I am a Data Scientist at <a href="https://services.harman.com/">Harman Connected Services</a> in Mumbai. I hold a B.Tech in Artificial Intelligence from <a href="https://engineering.nmims.edu/">MPSTME, NMIMS</a>.'
+  - "I work mostly on computer vision. Lately I've been getting into physical AI and world models, and I'm currently building a world model as a personal project."
+
+email: "reubenjrouse [at] gmail [dot] com"
+
+links:
+  - title: "GitHub"
+    url: "https://github.com/reubenjrouse"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/reuben-rouse/"

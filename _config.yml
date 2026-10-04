@@ -1,0 +1,5 @@
+# Site settings. Page content lives in _data/*.yml.
+
+name: Reuben Rouse
+url: "https://reubenjrouse.github.io"
+baseurl: ""
